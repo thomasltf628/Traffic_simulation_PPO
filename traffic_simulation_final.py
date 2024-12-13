@@ -60,5 +60,5 @@ while traci.simulation.getMinExpectedNumber() > 0:
         - 當前相位: {current_phase}
         - 當前狀態: {current_state}
         """)
-# Close the simulation
+# Close the simulation Traffic_simulation_PPO
 traci.close()
