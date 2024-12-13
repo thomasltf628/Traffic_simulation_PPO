@@ -1,0 +1,30 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="16.67" guiShape="passenger"/>
+    <vType id="bus" accel="2.0" decel="4.0" sigma="0.5" length="12" minGap="3" maxSpeed="13.89" guiShape="bus"/>
+
+    <!-- West to East -->
+    <flow id="flow_0" type="car" length="5" begin="0" end="3600" number="360" from="E0" to="E1" departLane="best" departSpeed="max"/>
+    <flow id="flow_1" type="car" length="5" begin="0" end="3600" number="180" from="E0" to="E2" departLane="best" departSpeed="max"/>
+    <flow id="flow_2" type="car" length="5" begin="0" end="3600" number="180" from="E0" to="E3" departLane="best" departSpeed="max"/>
+
+    <!-- East to West -->
+    <flow id="flow_3" type="car" length="5" begin="0" end="3600" number="360" from="E4" to="E7" departLane="best" departSpeed="max"/>
+    <flow id="flow_4" type="car" length="5" begin="0" end="3600" number="180" from="E4" to="E2" departLane="best" departSpeed="max"/>
+    <flow id="flow_5" type="car" length="5" begin="0" end="3600" number="180" from="E4" to="E3" departLane="best" departSpeed="max"/>
+
+    <!-- North to South -->
+    <flow id="flow_6" type="car" length="5" begin="0" end="3600" number="360" from="E5" to="E3" departLane="best" departSpeed="max"/>
+    <flow id="flow_7" type="car" length="5" begin="0" end="3600" number="180" from="E5" to="E7" departLane="best" departSpeed="max"/>
+    <flow id="flow_8" type="car" length="5" begin="0" end="3600" number="180" from="E5" to="E1" departLane="best" departSpeed="max"/>
+
+    <!-- South to North -->
+    <flow id="flow_9" type="car" length="5" begin="0" end="3600" number="360" from="E6" to="E2" departLane="best" departSpeed="max"/>
+    <flow id="flow_10" type="car" length="5" begin="0" end="3600" number="180" from="E6" to="E7" departLane="best" departSpeed="max"/>
+    <flow id="flow_11" type="car" length="5" begin="0" end="3600" number="180" from="E6" to="E1" departLane="best" departSpeed="max"/>
+
+    <!-- Bus routes -->
+    <flow id="bus_0" type="car" begin="0" end="3600" number="36" from="E0" to="E1" departLane="best" departSpeed="max"/>
+    <flow id="bus_1" type="car" begin="0" end="3600" number="36" from="E4" to="E7" departLane="best" departSpeed="max"/>
+    <flow id="bus_2" type="car" begin="0" end="3600" number="36" from="E5" to="E3" departLane="best" departSpeed="max"/>
+    <flow id="bus_3" type="car" begin="0" end="3600" number="36" from="E6" to="E2" departLane="best" departSpeed="max"/>
+</routes>
